@@ -9,6 +9,7 @@ import './App.css';
 
 
 import { useStateContext } from './contexts/ContextProvider';
+import Home from './pages/Home';
 
 const App = () => {
   const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
@@ -78,7 +79,7 @@ const App = () => {
                 <Route path="/kanban" element={<Kanban />} />
                 <Route path="/editor" element={<Editor />} />
                 <Route path="/calendar" element={<Calendar />} />
-      
+                <Route path="/home" element={<Home />} />
 
                 {/* charts  */}
                 <Route path="/line" element={<Line />} />
