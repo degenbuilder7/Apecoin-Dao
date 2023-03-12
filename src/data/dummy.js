@@ -482,11 +482,11 @@ export const links = [
     title: 'Pages',
     links: [
       {
-        name: 'active Proposals',
+        name: 'proposals',
         icon: <AiOutlineShoppingCart />,
       },
       {
-        name: 'employees',
+        name: 'members',
         icon: <IoMdContacts />,
       },
       {
