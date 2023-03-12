@@ -1,14 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-import './index.css';
 import {
   ApolloClient,
   InMemoryCache,
   ApolloProvider,
-  useQuery,
-  gql
-} from "@apollo/client";
+} from '@apollo/client';
+import './index.css';
 
 const client = new ApolloClient({
   uri: 'https://hub.snapshot.org/graphql', // Your running GraphQL server URL
@@ -17,7 +14,7 @@ const client = new ApolloClient({
 
 ReactDOM.render(
   <React.StrictMode>
-    <ApolloProvider client = {client}>
+    <ApolloProvider client={client}>
       <ContextProvider>
         <App />
       </ContextProvider>
