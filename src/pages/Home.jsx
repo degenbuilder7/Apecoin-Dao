@@ -1,6 +1,6 @@
-import React from 'react';
-import { useLazyQuery } from '@apollo/client';
-import { GET_QUERY, GET_VOTES } from '../graphql/Queries';
+import React, { useState } from "react";
+import { useLazyQuery } from "@apollo/client";
+import { GET_QUERY , GET_VOTES } from "../graphql/Queries";
 
 function Home() {
   // const [citySearched, setCitySearched] = useState("");
