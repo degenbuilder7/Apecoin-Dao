@@ -6,6 +6,8 @@ import {
   ApolloProvider,
 } from '@apollo/client';
 import './index.css';
+import { ContextProvider } from './contexts/ContextProvider';
+import App from './App';
 
 const client = new ApolloClient({
   uri: 'https://hub.snapshot.org/graphql', // Your running GraphQL server URL
@@ -19,6 +21,6 @@ ReactDOM.render(
         <App />
       </ContextProvider>
     </ApolloProvider>,
-  // </React.StrictMode>,
+  </React.StrictMode>,
   document.getElementById('root'),
 );
