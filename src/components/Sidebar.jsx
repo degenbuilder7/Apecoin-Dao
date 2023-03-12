@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { SiShopware } from 'react-icons/si';
+// import { SiShopware } from 'react-icons/si';
 import { MdOutlineCancel } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
@@ -25,7 +25,7 @@ const Sidebar = () => {
         <>
           <div className="flex justify-between items-center">
             <Link to="/" onClick={handleCloseSideBar} className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900">
-              <SiShopware /> <span>ApeCoinDao</span>
+              <img src="https://media.discordapp.net/attachments/1033079854826000484/1084318890630328350/apecoin_logo.jpg?width=550&height=550" alt="" height={25} width={25} /> <span>ApeCoinDao</span>
             </Link>
             <TooltipComponent content="Menu" position="BottomCenter">
               <button
