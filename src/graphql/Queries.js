@@ -1,4 +1,4 @@
-import { gql } from "@apollo/client";
+import { gql } from '@apollo/client';
 
 export const GET_QUERY = gql`
     query Proposals {
@@ -27,13 +27,12 @@ export const GET_QUERY = gql`
         }
         }
     }
-`
+`;
 
 export const GET_VOTES = gql`
     query Proposal {
         proposal(id : "QmPvbwguLfcVryzBRrbY4Pb9bCtxURagdv1XjhtFLf3wHj") {
         votes
         }
-    } 
-  
-`
+    }   
+`;

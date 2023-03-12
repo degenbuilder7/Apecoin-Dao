@@ -1,13 +1,13 @@
-import React, { useState } from "react";
-import { useLazyQuery } from "@apollo/client";
-import { GET_QUERY , GET_VOTES } from "../graphql/Queries";
+import React from 'react';
+import { useLazyQuery } from '@apollo/client';
+import { GET_QUERY, GET_VOTES } from '../graphql/Queries';
 
 function Home() {
-  const [citySearched, setCitySearched] = useState("");
+  // const [citySearched, setCitySearched] = useState("");
   const [getData, { data, error }] = useLazyQuery(GET_QUERY);
-  const [getVotes, {votedata, voteerror}] = useLazyQuery(GET_VOTES);
-  console.log("the data is",data);
-  console.log("votes are ",votedata, voteerror);
+  const [getVotes, { votedata, voteerror }] = useLazyQuery(GET_VOTES);
+  console.log('the data is', data);
+  console.log('votes are ', votedata, voteerror);
   if (error) return <h1> Error found</h1>;
 
   if (data) {
@@ -20,9 +20,9 @@ function Home() {
       <input
         type="text"
         placeholder="City name..."
-        onChange={(event) => {
-          setCitySearched(event.target.value);
-        }}
+        // onChange={(event) => {
+        //   setCitySearched(event.target.value);
+        // }}
       />
       <button onClick={() => getData()}> Search</button>
       {/* <button onClick={() => getVotes()}> Search</button> */}
