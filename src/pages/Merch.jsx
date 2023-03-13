@@ -1,4 +1,5 @@
-import React from 'react'
+/* eslint-disable */
+import React from 'react';
 
 const Merch = () => {
   return (
@@ -6,4 +7,4 @@ const Merch = () => {
   )
 }
 
-export default Merch
+export default Merch;

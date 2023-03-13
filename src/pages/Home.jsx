@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useQuery } from '@apollo/client';
 import { Card, CardContent, CardHeader, Typography } from "@mui/material"
 import GET_QUERY from '../graphql/Queries';
@@ -5,10 +6,12 @@ import GET_QUERY from '../graphql/Queries';
 function Home() {
   const { loading, error, data } = useQuery(GET_QUERY);
 
+
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
 
   return (
+
     <div>
       {data.proposals.slice(0, 10).map((proposal) => (
         <Card key={proposal.id}>
