@@ -6,6 +6,8 @@ import {
   ApolloProvider,
 } from '@apollo/client';
 import './index.css';
+import App from './App';
+import { ContextProvider } from './contexts/ContextProvider';
 
 const client = new ApolloClient({
   uri: 'https://hub.snapshot.org/graphql', // Your running GraphQL server URL

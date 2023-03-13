@@ -3,7 +3,7 @@ import { gql } from '@apollo/client';
 export const GET_QUERY = gql`
     query Proposals {
         proposals(
-        first: 20,
+        first: 10,
         skip: 0,
         where: {
             space_in: ["apecoin.eth"],
@@ -36,3 +36,4 @@ export const GET_VOTES = gql`
         }
     }   
 `;
+export default GET_QUERY;

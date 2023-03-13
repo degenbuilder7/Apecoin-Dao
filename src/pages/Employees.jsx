@@ -3,6 +3,7 @@ import { GridComponent, Inject, ColumnsDirective, ColumnDirective, Search, Page 
 
 import { employeesData, employeesGrid } from '../data/dummy';
 import { Header } from '../components';
+// import { GET_QUERY } from '../graphql/Queries';
 
 const Employees = () => {
   const toolbarOptions = ['Search'];
