@@ -1,4 +1,5 @@
 /* eslint-disable */
+import React from 'react';
 import { useQuery } from '@apollo/client';
 import { Card, CardContent, CardHeader, Typography } from "@mui/material"
 import GET_QUERY from '../graphql/Queries';
