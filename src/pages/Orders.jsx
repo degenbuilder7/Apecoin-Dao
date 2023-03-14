@@ -15,7 +15,6 @@ import { red } from '@mui/material/colors';
 // import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import GET_QUERY from '../graphql/Queries';
 import { Button } from '@mui/material';
 import {GET_QUERY} from '../graphql/Queries';
 
