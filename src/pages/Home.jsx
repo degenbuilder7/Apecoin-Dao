@@ -13,13 +13,19 @@ function Home() {
 
   return (
 
-    <div>
+    <div className='grid gap-4 grid-cols-3 grid-rows-3 h-2/3'>
       {data.proposals.slice(0, 10).map((proposal) => (
-        <Card key={proposal.id}>
+        <Card variant="outlined" key={proposal.id} >
           <CardHeader title={proposal.title} />
           <CardContent>
             <Typography variant="body2" color="textSecondary" component="p">
-              {proposal.body}
+              Start Date: {new Date(proposal.start * 1000).toDateString()} 
+              {new Date(proposal.start * 1000).toLocaleTimeString()}
+              <br/>
+              End Date: {new Date(proposal.end * 1000).toDateString()} 
+              {new Date(proposal.end * 1000).toLocaleTimeString()}
+              <br/>
+              By: {proposal.author}
             </Typography>
           </CardContent>
         </Card>

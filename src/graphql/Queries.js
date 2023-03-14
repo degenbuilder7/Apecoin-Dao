@@ -13,20 +13,19 @@ export const GET_QUERY = gql`
         orderBy: "created",
         orderDirection: desc
         ) {
-        id
-        title
-        body
-        choices
-        start
-        end
-        snapshot
-        state
-        author
-        space {
             id
-            name
+            title
+            body
+            choices
+            start
+            end
+            snapshot
+            state
+            author
+            scores
+            scores_by_strategy
         }
-        }
+
     }
 `;
 
