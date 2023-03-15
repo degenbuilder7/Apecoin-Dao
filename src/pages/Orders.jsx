@@ -84,7 +84,7 @@ export default function RecipeReviewCard() {
             aria-expanded={expanded}
             aria-label="show more"
           >
-            <ExpandMoreIcon />
+          <ExpandMoreIcon />
           </ExpandMore>
         </CardActions>
         <Collapse in={expanded} timeout="auto" unmountOnExit>
