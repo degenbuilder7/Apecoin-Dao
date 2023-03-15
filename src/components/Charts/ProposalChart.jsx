@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LineChart = () => (
+const ProposalChart = () => (
   <iframe
     src="https://dune.com/embeds/2205892/3618264"
     title="Proposal Chart"
@@ -11,4 +11,4 @@ const LineChart = () => (
   />
 );
 
-export default LineChart;
+export default ProposalChart;

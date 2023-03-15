@@ -157,17 +157,7 @@ export const areaPrimaryYAxis = {
   labelStyle: { color: 'gray' },
 
 };
-export const barPrimaryXAxis = {
-  valueType: 'Category',
-  interval: 1,
-  majorGridLines: { width: 0 },
-};
-export const barPrimaryYAxis = {
-  majorGridLines: { width: 0 },
-  majorTickLines: { width: 0 },
-  lineStyle: { width: 0 },
-  labelStyle: { color: 'transparent' },
-};
+
 const areaChartData = [
   [
     { x: new Date(2002, 0, 1), y: 2.2 },
@@ -256,50 +246,6 @@ export const barChartData = [
   ],
 ];
 
-export const barCustomSeries = [
-  {
-    dataSource: barChartData[0],
-    xName: 'x',
-    yName: 'y',
-    name: 'Gold',
-    type: 'Column',
-    marker: {
-      dataLabel: {
-        visible: true,
-        position: 'Top',
-        font: { fontWeight: '600', color: '#ffffff' },
-      },
-    },
-  },
-  {
-    dataSource: barChartData[1],
-    xName: 'x',
-    yName: 'y',
-    name: 'Silver',
-    type: 'Column',
-    marker: {
-      dataLabel: {
-        visible: true,
-        position: 'Top',
-        font: { fontWeight: '600', color: '#ffffff' },
-      },
-    },
-  },
-  {
-    dataSource: barChartData[2],
-    xName: 'x',
-    yName: 'y',
-    name: 'Bronze',
-    type: 'Column',
-    marker: {
-      dataLabel: {
-        visible: true,
-        position: 'Top',
-        font: { fontWeight: '600', color: '#ffffff' },
-      },
-    },
-  },
-];
 export const colorMappingData = [
   [
     { x: 'Jan', y: 6.96 },
@@ -537,7 +483,7 @@ export const links = [
         icon: <BsBarChart />,
       },
       {
-        name: 'pyramid',
+        name: 'apeholders',
         icon: <GiLouvrePyramid />,
       },
       {
