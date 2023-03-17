@@ -5,14 +5,6 @@ import {
     useContract,
   } from "@thirdweb-dev/react";
   import React from "react";
-//   import styles from "../styles/Home.module.css";
-  
-  // type Props = {
-  //   reward: {
-  //     contractAddress: string;
-  //     quantityPerReward: string | number;
-  //   };
-  // };
   
   export default function ERC20RewardBox(reward) {
     const { contract: token } = useContract(reward.contractAddress);
