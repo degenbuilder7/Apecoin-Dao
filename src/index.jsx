@@ -6,6 +6,7 @@ import {
   ApolloProvider,
 } from '@apollo/client';
 import './index.css';
+import { ChainId, ThirdwebProvider } from '@thirdweb-dev/react';
 import { ContextProvider } from './contexts/ContextProvider';
 import App from './App';
 
@@ -16,11 +17,13 @@ const client = new ApolloClient({
 
 ReactDOM.render(
   <React.StrictMode>
-    <ApolloProvider client={client}>
-      <ContextProvider>
-        <App />
-      </ContextProvider>
-    </ApolloProvider>,
+    <ThirdwebProvider activeChain={ChainId}>
+      <ApolloProvider client={client}>
+        <ContextProvider>
+          <App />
+        </ContextProvider>
+      </ApolloProvider>,
+    </ThirdwebProvider>
   </React.StrictMode>,
   document.getElementById('root'),
 );

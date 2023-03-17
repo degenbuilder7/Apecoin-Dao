@@ -7,7 +7,7 @@ export { default as Footer } from './Footer';
 // eslint-disable-next-line import/no-cycle
 export { default as Cart } from './Cart';
 // eslint-disable-next-line import/no-cycle
-export { default as Chat } from './Chat';
+export { default as Treasure } from './Treasure';
 // eslint-disable-next-line import/no-cycle
 export { default as Notification } from './Notification';
 // eslint-disable-next-line import/no-cycle
@@ -19,3 +19,4 @@ export { default as Pie } from './Charts/Pie';
 export { default as ChartsHeader } from './ChartsHeader';
 export { default as Header } from './Header';
 export { default as ProposalChart } from './Charts/ProposalChart';
+export { default as Chat } from './Chat';
