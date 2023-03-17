@@ -8,6 +8,7 @@ import { Ecommerce, Merch, Calendar, Stacked, ApeHolder, Customers, Kanban, Line
 import './App.css';
 import { useStateContext } from './contexts/ContextProvider';
 import Home from './pages/Home';
+import TrustedUsers from './pages/trustedusers';
 // import LatestProposals from './pages/LatestProposals';
 
 const App = () => {
@@ -88,7 +89,7 @@ const App = () => {
                 <Route path="/financial" element={<Financial />} />
                 <Route path="/color-mapping" element={<ColorMapping />} />
                 <Route path="/apeholders" element={<ApeHolder />} />
-                <Route path="/stacked" element={<Stacked />} />
+                <Route path="/stacked" element={<TrustedUsers />} />
 
               </Routes>
             </div>

@@ -1,6 +1,7 @@
+/* eslint-disable */
 import React from 'react';
 import { useQuery } from '@apollo/client';
-import { Card, CardActions, CardContent, CardHeader, Typography } from "@mui/material"
+import { Card, CardActions, CardContent, CardHeader, Typography } from "@mui/material";
 import {GET_QUERY} from '../graphql/Queries';
 import { styled } from '@mui/material/styles';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -70,7 +71,7 @@ function Home() {
             </ExpandMore>
           </CardActions>
           <Collapse in={expanded[index]} timeout="auto" unmountOnExit>
-            <div style={{ height: "200px", overflowY: "auto" }}>
+            <div style={{ height: '200px', overflowY: 'auto' }}>
               <CardContent>
                 <Typography paragraph>Method:</Typography>
                 <Typography paragraph>

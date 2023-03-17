@@ -12,4 +12,4 @@ export { default as Line } from './Charts/Line';
 export { default as Pie } from './Charts/Pie';
 export { default as ApeHolder } from './Charts/ApeHolder';
 export { default as Stacked } from './Charts/Stacked';
-
+export { default as trustedusers } from './trustedusers';
