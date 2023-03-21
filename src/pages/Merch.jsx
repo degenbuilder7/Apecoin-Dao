@@ -1,4 +1,3 @@
-/* eslint-disable */
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
@@ -11,13 +10,11 @@ import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
-// import FavoriteIcon from '@mui/icons-material/Favorite';
-// import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { Button } from '@mui/material';
-import {GET_QUERY} from '../graphql/Queries';
 
+import data from './data.json';
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -29,16 +26,6 @@ const ExpandMore = styled((props) => {
     duration: theme.transitions.duration.shortest,
   }),
 }));
-// const products = [
-//   {
-//     title: 'Product 1',
-//     image: 'https://via.placeholder.com/194x194'
-//   },
-//   {
-//     title: 'Product 2',
-//     image: 'https://via.placeholder.com/194x194'
-//   },
-// ]
 
 export default function RecipeReviewCard() {
   const [expanded, setExpanded] = React.useState(false);
@@ -49,9 +36,9 @@ export default function RecipeReviewCard() {
 
   return (
     <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-      {[...Array(10)].map(() => (
-        <Card sx={{ maxWidth: 345 }}>
-        <CardHeader
+      {data.map((item, index) => (
+        <Card key={index} sx={{ maxWidth: 345 }}>
+          <CardHeader
           avatar={
             <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
               A
@@ -62,21 +49,22 @@ export default function RecipeReviewCard() {
               <MoreVertIcon />
             </IconButton>
           }
-          title="ApeCoin"
+          title={item.title}
           subheader="Sell"
         />
         <CardMedia
           component="img"
-          height="194"
-          image="https://media.discordapp.net/attachments/1033079854826000484/1084696402808016925/snapshot.jpg?width=583&height=583"
+          height="583"
+          width="583"
+          image={item.image}
           alt="Paella dish"
         />
         <CardContent>
           <Typography variant="body2" color="text.secondary">
-            This impressive T-Shirt
+            {item.description}
           </Typography>
         </CardContent>
-        <Button>Buy For 5 APE Tokens</Button>
+        <Button>{`Buy for ${item.price}`}</Button>
         <CardActions disableSpacing>
           <ExpandMore
             expand={expanded}
@@ -84,7 +72,7 @@ export default function RecipeReviewCard() {
             aria-expanded={expanded}
             aria-label="show more"
           >
-            <ExpandMoreIcon />
+          <ExpandMoreIcon />
           </ExpandMore>
         </CardActions>
         <Collapse in={expanded} timeout="auto" unmountOnExit>
