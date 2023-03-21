@@ -11,3 +11,6 @@ Stats related to the governance of the dao shown in the form of charts.
 We are providing a marketplace for ApeCoin-branded merchandise, allowing users to purchase unique swag and support the ApeCoin community.
 
 3> Group Messaging via Push Protocol.
+To get easily notified when an important notification is there.
+
+4> Organise your Schedule for the DAO using Kanban editor
