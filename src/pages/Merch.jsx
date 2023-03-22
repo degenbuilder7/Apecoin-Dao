@@ -44,7 +44,7 @@ export default function RecipeReviewCard() {
     <h1 className='text-sky-400 text-center text-6xl'>APE Merch</h1>
     <div style={{ display: 'flex', flexWrap: 'wrap' }} className="my-6">
       {data.map((item, index) => (
-        <Card key={index} sx={{ maxWidth: 345 }}>
+        <Card key={index} sx={{ maxWidth: 345, margin: '1rem' }}>
           <CardMedia
             component="img"
             height="583"
@@ -57,7 +57,7 @@ export default function RecipeReviewCard() {
               {item.subheader}
             </Typography>
           </CardContent>
-          <Button>{`Buy for ${item.price} APECOIN`}</Button>
+          <Button className='text-center'>{`Buy for ${item.price} APECOIN`}</Button>
           <CardActions disableSpacing>
             <ExpandMore
               expand={expanded[index]}
