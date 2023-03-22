@@ -163,17 +163,11 @@ export function PushChat() {
                       <Link to="/notifications" className="nav-button">
                         NOTIFICATIONS
                       </Link>
-                      <Link to="/secret" className="nav-button">
-                        SECRET NOTIFICATION
-                      </Link>
                       <Link to="/channels" className="nav-button">
                         CHANNELS
                       </Link>
                       <Link to="/payloads" className="nav-button">
                         PAYLOADS
-                      </Link>
-                      <Link to="/socket" className="nav-button">
-                        SOCKET
                       </Link>
                       <Link to="/embed" className="nav-button">
                         EMBDED
