@@ -4,7 +4,7 @@ import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
-import { Ecommerce, Merch, Calendar, Stacked, ApeHolder, Customers, Kanban, Line, Area, Bar, Pie, Financial, ColorMapping } from './pages';
+import { Ecommerce, Merch, Calendar, ApeHolder, Customers, Kanban, Line, Area, Bar, Pie, Financial, ColorMapping } from './pages';
 import './App.css';
 import { useStateContext } from './contexts/ContextProvider';
 import Home from './pages/Home';
@@ -89,7 +89,7 @@ const App = () => {
                 <Route path="/financial" element={<Financial />} />
                 <Route path="/color-mapping" element={<ColorMapping />} />
                 <Route path="/apeholders" element={<ApeHolder />} />
-                <Route path="/stacked" element={<TrustedUsers />} />
+                <Route path="/trustlevel" element={<TrustedUsers />} />
 
               </Routes>
             </div>
