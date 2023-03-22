@@ -15,6 +15,8 @@ To get easily notified when an important notification is there.
 
 4> Organise your Schedule for the DAO using Kanban editor
 
+![image](https://user-images.githubusercontent.com/94379406/226928000-283e379d-263b-4b61-9268-9493ca666220.png)
+
 # How Push is utilised in out Application 
 
 Push notifications are utilized in our Apecoin DAO app in various ways to improve governance and enhance user engagement. Here are some potential use cases which the app focuses on:
@@ -28,3 +30,8 @@ Push notifications are utilized in our Apecoin DAO app in various ways to improv
 4. DAO events: If the Apecoin DAO hosts events, push notifications could be sent to users to inform them of the event details and remind them to attend.
 
 5. Propol status updates: As proposals progress through the voting process, push notifications could be sent to keep users updated on the status of each proposal.
+
+![image](https://user-images.githubusercontent.com/94379406/226927777-1039b524-be2a-4527-8613-7e0fef590a18.png)
+![image](https://user-images.githubusercontent.com/94379406/226927900-19d125ef-3245-4ecf-9341-df47e2466127.png)
+
+
