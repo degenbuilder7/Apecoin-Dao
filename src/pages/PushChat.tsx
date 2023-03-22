@@ -8,7 +8,7 @@ import { Checkbox } from '../components/Checkbox';
 import Dropdown from '../components/Dropdown';
 import Web3Context from "../contexts/web3context";
 import EnvContext from '../contexts/envContext'; 
-import  PushLogo  from '../data/pushLogo.svg';
+// import { ReactComponent as PushLogo } from '../data/pushLogo.svg';
 import ChatTest from '../components/Chat/ChatTest';
 import CreateUserTest from '../components/Chat/CreateUser';
 import SendMessageTest from '../components/Chat/SendMessage';
@@ -126,8 +126,8 @@ export function PushChat() {
   return (
     <StyledApp>
       <Link className="homeLink" to="/">
-        <PushLogo style={{ marginRight: 12 }} />
-        <h1>Push SDK Demo React App</h1>
+        {/* <PushLogo style={{ marginRight: 12 }} /> */}
+        <h1>Push SDK </h1>
       </Link>
 
       <ConnectButton />
@@ -155,7 +155,7 @@ export function PushChat() {
       <EnvContext.Provider value={{ env, isCAIP }}>
         {checkForWeb3Data(web3Data) ? (
           <Web3Context.Provider value={web3Data}>
-              <Routes>
+              {/* <Routes> */}
                 <Route
                   path="/"
                   element={
@@ -198,15 +198,15 @@ export function PushChat() {
                 <Route path="/chat" element={<ChatTest />} /> */}
 
                 {/* chat method  routes */}
-                <Route path="/get" element={<GetUser />} />
+                {/* <Route path="/get" element={<GetUser />} />
                 <Route path="/create" element={<CreateUserTest />} />
                 <Route path="/send" element={<SendMessageTest />} />
                 <Route path="/approve" element={<ApproveRequestTest />} />
-                <Route path="/chats" element={<GetChats />} />
+                <Route path="/chats" element={<GetChats />} /> */}
                 {/* <Route path="/hash" element={<ConversationHashTest />} />
                 <Route path="/history" element={<HistoryTest />} />
                 <Route path="/requests" element={<GetRequestsTest />} /> */}
-              </Routes>
+              {/* </Routes> */}
           </Web3Context.Provider>
         ) : null}
       </EnvContext.Provider>
