@@ -43,7 +43,9 @@ function Home() {
   };
 
   return (
-    <div className='grid gap-4 grid-cols-3 grid-rows-3 h-2/3'>
+    <>
+    <h1 className='text-green-400 text-center text-6xl'>APE Proposals</h1>
+    <div className='grid gap-4 grid-cols-3 grid-rows-3 h-2/ my-6 p-6'>
       {data.proposals.slice(0, 10).map((proposal, index) => (
         <Card variant="outlined" key={proposal.id} style={cardStyle}>
           <div>
@@ -83,6 +85,7 @@ function Home() {
         </Card>
       ))}
     </div>
+    </>
   );
 }
 export default Home;

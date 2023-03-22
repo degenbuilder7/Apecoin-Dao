@@ -4,7 +4,6 @@ import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper
 import data from "./trust.json";
 
 const UserDataTable = () => {
-  console.log("userdata is",data);
   return (
     <TableContainer component={Paper}>
       <Table>
