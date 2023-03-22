@@ -4,7 +4,7 @@ import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
-import { Ecommerce, Merch, Calendar, ApeHolder, Customers, Kanban, Line, Area, Bar, Pie, Financial, ColorMapping } from './pages';
+import { Ecommerce, Merch, Calendar, ApeHolder, Kanban, Line, Area, Bar, Pie, Financial, ColorMapping } from './pages';
 import './App.css';
 import { useStateContext } from './contexts/ContextProvider';
 import Home from './pages/Home';
@@ -12,6 +12,7 @@ import TrustedUsers from './pages/trustedusers';
 // import LatestProposals from './pages/LatestProposals';
 import ChatTest from './components/Chat/ChatTest.tsx';
 import GetChatsTest from './components/Chat/GetChats.tsx';
+import PushChat from './pages/PushChat.tsx';
 
 const App = () => {
   const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
@@ -75,7 +76,6 @@ const App = () => {
                 {/* pages  */}
                 <Route path="/merch" element={<Merch />} />
                 <Route path="/merch" element={<Merch />} />
-                <Route path="/customers" element={<Customers />} />
                 <Route path="/proposals" element={<Home />} />
 
                 {/* apps  */}
@@ -94,6 +94,7 @@ const App = () => {
                 <Route path="/trustlevel" element={<TrustedUsers />} />
                 <Route path="/chat" element={<ChatTest />} />
                 <Route path="/chats" element={<GetChatsTest />} />
+                <Route path="/pushchat" element={<PushChat />} />
               </Routes>
             </div>
             <Footer />
