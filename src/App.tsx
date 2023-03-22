@@ -15,6 +15,9 @@ import ChatTest from './components/Chat/ChatTest';
 import GetChatsTest from './components/Chat/GetChats';
 import PushChat from './pages/PushChat';
 import { useWeb3React } from '@web3-react/core';
+import { Checkbox } from './components/Checkbox';
+import Dropdown from './components/Dropdown';
+import ConnectButton from './components/Connect';
 
 const App = () => {
   const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
@@ -51,8 +54,19 @@ const App = () => {
   const [env, setEnv] = useState('staging');
   const [isCAIP, setIsCAIP] = useState(false);
 
+  const onChangeEnv = (e: any) => {
+    setEnv(e.target.value);
+  };
+
+  const onChangeCAIP = () => {
+    setIsCAIP(!isCAIP);
+  };
+
+
   return (
     <div className={currentMode === 'Dark' ? 'dark' : ''}>
+      <ConnectButton />
+      
       <EnvContext.Provider value={{ env, isCAIP }}>
         {checkForWeb3Data(web3Data) ? (
           <Web3Context.Provider value={web3Data}>

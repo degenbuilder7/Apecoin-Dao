@@ -155,23 +155,11 @@ export function PushChat() {
       <EnvContext.Provider value={{ env, isCAIP }}>
         {checkForWeb3Data(web3Data) ? (
           <Web3Context.Provider value={web3Data}>
-              {/* <Routes> */}
+              <Routes>
                 <Route
                   path="/"
                   element={
                     <NavMenu>
-                      <Link to="/notifications" className="nav-button">
-                        NOTIFICATIONS
-                      </Link>
-                      <Link to="/channels" className="nav-button">
-                        CHANNELS
-                      </Link>
-                      <Link to="/payloads" className="nav-button">
-                        PAYLOADS
-                      </Link>
-                      <Link to="/embed" className="nav-button">
-                        EMBDED
-                      </Link>
                       <Link to="/chat" className="nav-button">
                         CHAT
                       </Link>
@@ -200,7 +188,7 @@ export function PushChat() {
                 {/* <Route path="/hash" element={<ConversationHashTest />} />
                 <Route path="/history" element={<HistoryTest />} />
                 <Route path="/requests" element={<GetRequestsTest />} /> */}
-              {/* </Routes> */}
+              </Routes>
           </Web3Context.Provider>
         ) : null}
       </EnvContext.Provider>
