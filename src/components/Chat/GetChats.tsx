@@ -36,6 +36,7 @@ const GetChatsTest = () => {
         pgpPrivateKey: pvtkey,
         env,
       });
+      console.log(response,account,"here");
 
       setGetChatsResponse(response);
     } catch (e) {

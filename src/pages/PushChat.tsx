@@ -127,7 +127,7 @@ export function PushChat() {
     <StyledApp>
       <Link className="homeLink" to="/">
         {/* <PushLogo style={{ marginRight: 12 }} /> */}
-        <h1>Push SDK </h1>
+        <h1 className="text-sky-400">Get Notified via Push </h1>
       </Link>
 
       <ConnectButton />

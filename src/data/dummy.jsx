@@ -375,7 +375,7 @@ export const links = [
         icon: <IoMdContacts />,
       },
       {
-        name: 'chat',
+        name: 'pushchat',
         icon: <RiContactsLine />,
       },
     ],

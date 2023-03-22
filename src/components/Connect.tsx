@@ -101,7 +101,7 @@ const ConnectButton = () => {
     <ConnectWrapper>
       {active ? (
           <>
-            <p>Connected with <span className="account">{account}</span></p>
+            <p className="text-sky-400">Connected with <span className="account">{account}</span></p>
             {chainId ? <p className="network">{NETWORK_MAPPING[chainId]}</p> : null}
             <Disconnect onClick={disconnect}>Disconnect Metamask</Disconnect>
           </>
