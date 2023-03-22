@@ -11,7 +11,7 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { Button } from '@mui/material';
-
+import { Chat } from "@pushprotocol/uiweb";
 import data from './data.json';
 
 const ExpandMore = styled((props) => {
@@ -34,6 +34,12 @@ export default function RecipeReviewCard() {
       newExpanded[index] = !newExpanded[index];
       return newExpanded;
     });
+  };
+
+  const theme = {
+    btnColorPrimary: "#3e89e6",
+    bgColorSecondary: "#3e89e6",
+    moduleColor: "#f0f0f0",
   };
 
   return (
@@ -74,6 +80,15 @@ export default function RecipeReviewCard() {
           </Collapse>
         </Card>
       ))}
+        <Chat
+          account="0xCF8D2Da12A032b3f3EaDC686AB18551D8fD6c132"
+          supportAddress="0xe0c98ed63F1f6Bc8bF745BaC44EeE732eEE78FC5"
+          apiKey="jVPMCRom1B.iDRMswdehJG7NpHDiECIHwYMMv6k2KzkPJscFIDyW8TtSnk4blYnGa8DIkfuacU0"
+          env="staging"
+          greetingMsg={`Get Notified when new proposals arrive`}
+          modalTitle={`Chat about Proposals`}
+          theme={theme}
+        />
     </div>
     </>
   );
