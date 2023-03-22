@@ -10,6 +10,8 @@ import { useStateContext } from './contexts/ContextProvider';
 import Home from './pages/Home';
 import TrustedUsers from './pages/trustedusers';
 // import LatestProposals from './pages/LatestProposals';
+import ChatTest from './components/Chat/ChatTest.tsx';
+import GetChatsTest from './components/Chat/GetChats.tsx';
 
 const App = () => {
   const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
@@ -90,7 +92,8 @@ const App = () => {
                 <Route path="/color-mapping" element={<ColorMapping />} />
                 <Route path="/apeholders" element={<ApeHolder />} />
                 <Route path="/trustlevel" element={<TrustedUsers />} />
-
+                <Route path="/chat" element={<ChatTest />} />
+                <Route path="/chats" element={<GetChatsTest />} />
               </Routes>
             </div>
             <Footer />
