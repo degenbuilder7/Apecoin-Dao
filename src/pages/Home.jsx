@@ -9,6 +9,7 @@ import Collapse from '@mui/material/Collapse';
 import IconButton from '@mui/material/IconButton';
 import { Chat } from "@pushprotocol/uiweb";
 import { useState } from 'react';
+import Tilt from 'react-tilt'
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -53,44 +54,46 @@ function Home() {
   return (
     <>
       <h1 className='text-green-400 text-center text-6xl'>APE Proposals</h1>
-      <div className='grid gap-4 grid-cols-3 grid-rows-3 h-2/ my-6 p-6'>
+      <div className='grid gap-4 grid-cols-3 grid-rows-3 h-2/ my-6 p-12 '>
         {data.proposals.slice(0, 10).map((proposal, index) => (
-          <Card variant="outlined" key={proposal.id} style={cardStyle}>
-            <div>
-              <CardHeader title={proposal.title} />
-              <CardContent style={cardContentStyle}>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  Start Date: {new Date(proposal.start * 1000).toDateString()} 
-                  {new Date(proposal.start * 1000).toLocaleTimeString()}
-                  <br/>
-                  End Date: {new Date(proposal.end * 1000).toDateString()} 
-                  {new Date(proposal.end * 1000).toLocaleTimeString()}
-                  <br/>
-                  By: {proposal.author}
-                </Typography>
-              </CardContent>
-            </div>
-            <CardActions disableSpacing>
-              <ExpandMore
-                expand={expanded[index]}
-                onClick={() => handleExpandClick(index)}
-                aria-expanded={expanded[index]}
-                aria-label="show more"
-              >
-                <ExpandMoreIcon />
-              </ExpandMore>
-            </CardActions>
-            <Collapse in={expanded[index]} timeout="auto" unmountOnExit>
-              <div style={{ height: '200px', overflowY: 'auto' }}>
-                <CardContent>
-                  <Typography paragraph>Method:</Typography>
-                  <Typography paragraph>
-                    {proposal.body}
+          <Tilt className="Tilt" options={{ max : 25 , perspective: 500, reverse: true }} style={{ width: 250 }} >
+            <Card variant="outlined" key={proposal.id} style={cardStyle}>
+              <div className='bg-orange-300'>
+                <CardHeader title={proposal.title} />
+                <CardContent style={cardContentStyle}>
+                  <Typography variant="body2"  component="p" className='Tilt-inner text-white-200'>
+                    Start Date: {new Date(proposal.start * 1000).toDateString()} 
+                    {new Date(proposal.start * 1000).toLocaleTimeString()}
+                    <br/>
+                    End Date: {new Date(proposal.end * 1000).toDateString()} 
+                    {new Date(proposal.end * 1000).toLocaleTimeString()}
+                    <br/>
+                    By: {proposal.author}
                   </Typography>
                 </CardContent>
               </div>
-            </Collapse>
-          </Card>
+              <CardActions disableSpacing>
+                <ExpandMore
+                  expand={expanded[index]}
+                  onClick={() => handleExpandClick(index)}
+                  aria-expanded={expanded[index]}
+                  aria-label="show more"
+                >
+                  <ExpandMoreIcon />
+                </ExpandMore>
+              </CardActions>
+              <Collapse in={expanded[index]} timeout="auto" unmountOnExit>
+                <div style={{ height: '200px', overflowY: 'auto' }}>
+                  <CardContent>
+                    <Typography paragraph>Method:</Typography>
+                    <Typography paragraph>
+                      {proposal.body}
+                    </Typography>
+                  </CardContent>
+                </div>
+              </Collapse>
+            </Card>
+          </Tilt>
         ))}
       </div>
       <div>
