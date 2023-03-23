@@ -133,6 +133,7 @@ export function PushChat() {
       <ConnectButton />
 
       <Dropdown
+        className="text-sky-400"
         label="ENV"
         options={[
           { label: 'prod', value: 'prod' },
@@ -159,35 +160,13 @@ export function PushChat() {
                 <Route
                   path="/"
                   element={
-                    <NavMenu>
+                    <NavMenu className="my-8">
                       <Link to="/chat" className="nav-button">
                         CHAT
                       </Link>
                     </NavMenu>
                   }
                 />
-                {/* <Route path="/notifications" element={<NotificationsTest />} />
-                <Route path="/secret" element={<SecretNotificationsTest />} />
-
-                <Route path="/channels" element={<ChannelsTest />} />
-
-                <Route path="/payloads" element={<PayloadsTest />} />
-
-                <Route path="/socket" element={<SocketTest />} />
-
-                <Route path="/embed" element={<EmbedTest />} />
-
-                <Route path="/chat" element={<ChatTest />} /> */}
-
-                {/* chat method  routes */}
-                {/* <Route path="/get" element={<GetUser />} />
-                <Route path="/create" element={<CreateUserTest />} />
-                <Route path="/send" element={<SendMessageTest />} />
-                <Route path="/approve" element={<ApproveRequestTest />} />
-                <Route path="/chats" element={<GetChats />} /> */}
-                {/* <Route path="/hash" element={<ConversationHashTest />} />
-                <Route path="/history" element={<HistoryTest />} />
-                <Route path="/requests" element={<GetRequestsTest />} /> */}
               </Routes>
           </Web3Context.Provider>
         ) : null}

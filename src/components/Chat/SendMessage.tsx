@@ -68,7 +68,7 @@ const SendMessage = () => {
   return (
     <div>
       <ChatTest />
-      <h2>Send Message Test page</h2>
+      <h2 className='text-sky-600'>Send Message to Group page</h2>
 
       <Loader show={isLoading} />
 

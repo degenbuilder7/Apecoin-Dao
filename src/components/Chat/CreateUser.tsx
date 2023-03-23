@@ -13,7 +13,7 @@ import { walletToPCAIP10 } from '../../helpers';
 import ChatTest from './ChatTest';
 import React from 'react';
 
-const CreateUserTest = () => {
+const CreateUser = () => {
   const { account } = useContext<any>(Web3Context);
   const { env, isCAIP } = useContext<any>(EnvContext);
   const [isLoading, setLoading] = useState(false);
@@ -41,7 +41,7 @@ const CreateUserTest = () => {
   return (
     <div>
       <ChatTest />
-      <h2>Create User Test page</h2>
+      <h2>Create User page</h2>
 
       <Loader show={isLoading} />
 
@@ -66,4 +66,4 @@ const CreateUserTest = () => {
   );
 };
 
-export default CreateUserTest;
+export default CreateUser;
