@@ -731,8 +731,8 @@ export const userProfileData = [
   },
   {
     icon: <BsShield />,
-    title: 'My Inbox',
-    desc: 'Messages & Emails',
+    title: 'My Notifications',
+    desc: 'Proposals & Merchs',
     iconColor: 'rgb(0, 194, 146)',
     iconBg: 'rgb(235, 250, 242)',
   },
