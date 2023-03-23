@@ -69,6 +69,7 @@ const Ecommerce = () => {
       </div>
       <div>
         <div>
+          <div className='bg-white'>
         <iframe
           src="https://dune.com/embeds/2249486/3686610"
           title="Proposal Chart"
@@ -76,8 +77,10 @@ const Ecommerce = () => {
           height="500px"
           allowfullscreen
         />
-        <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg rounded-2xl md:w-400 p-8 m-3 flex justify-center items-center gap-10">
-            <div className="w-40">
+        </div>
+
+        <div className="bg-black dark:text-gray-200 dark:bg-secondary-dark-bg rounded-2xl md:w-400 p-8 m-3 flex justify-center items-center gap-10">
+            <div className="w-40"e>
               <Pie id="pie-chart" data={ecomPieChartData} legendVisiblity={false} height="160px" />
             </div>
           </div>
@@ -113,13 +116,13 @@ const Ecommerce = () => {
 
             <p className="text-gray-400 text-sm">36 Recent Proposals</p>
           </div>
-        </div>
-        <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg p-6 rounded-2xl w-96 md:w-760">
+        </div >
+        <div className=" dark:text-gray-200 dark:bg-secondary-dark-bg p-6 rounded-2xl w-96 md:w-760">
           <div className="flex justify-between items-center gap-2 mb-10">
             <p className="text-xl font-semibold">Proposal Overview</p>
             <DropDown currentMode={currentMode} />
           </div>
-          <div className="md:w-full overflow-auto">
+          <div className=" bg-white md:w-full overflow-auto">
             <LineChart />
           </div>
         </div>
