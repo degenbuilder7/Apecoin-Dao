@@ -81,7 +81,7 @@ const SendMessage = () => {
                 type="text"
                 onChange={updateMessageContent}
                 value={messageContent}
-                style={{ width: 400, height: 30 }}
+                style={{ width: 400, height: 30, border: '1px solid black', borderRadius: '10px' }}
               />
             </SectionItem>
             <SectionItem style={{ marginTop: 20 }}>
@@ -90,7 +90,7 @@ const SendMessage = () => {
                 type="text"
                 onChange={updateReceiverAddress}
                 value={receiverAddress}
-                style={{ width: 400, height: 30 }}
+                style={{ width: 400, height: 30, border: '1px solid black',borderRadius: '10px' }}
               />
             </SectionItem>
             <SectionItem style={{ marginTop: 20 }}>
@@ -99,7 +99,7 @@ const SendMessage = () => {
                 type="text"
                 onChange={updateApiKey}
                 value={apiKey}
-                style={{ width: 400, height: 30 }}
+                style={{ width: 400, height: 30 , border: '1px solid black', borderRadius: '10px'}}
               />
             </SectionItem>
             <SectionItem style={{ marginTop: 20 }}>
