@@ -378,6 +378,10 @@ export const links = [
         name: 'pushchat',
         icon: <RiContactsLine />,
       },
+      {
+        name: 'notifications',
+        icon: <RiContactsLine />,
+      },
     ],
   },
   {

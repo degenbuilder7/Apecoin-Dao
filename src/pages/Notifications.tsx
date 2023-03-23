@@ -119,7 +119,7 @@ const Notifications = () => {
   return (
       <div>
         <Header>
-          <h2>Notifications Test page</h2>
+          <h2 className='text-sky-400'>Notifications page</h2>
 
           {/* <TestModal /> */}
           

@@ -1,13 +1,11 @@
 import React from 'react';
 import { BsCurrencyDollar } from 'react-icons/bs';
-import { GoPrimitiveDot } from 'react-icons/go';
 import { IoIosMore } from 'react-icons/io';
 import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
 import {GET_QUERY} from '../graphql/Queries';
 import { useQuery } from '@apollo/client';
-
 import { Stacked, Pie, Button, LineChart, SparkLine } from '../components';
-import { earningData, medicalproBranding, recentTransactions, weeklyStats, dropdownData, SparklineAreaData, ecomPieChartData } from '../data/dummy';
+import { earningData,  recentTransactions, weeklyStats, dropdownData, SparklineAreaData, ecomPieChartData } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 
 const DropDown = ({ currentMode }) => (
@@ -27,7 +25,7 @@ const Ecommerce = () => {
           <div className="flex justify-between items-center">
             <div>
               <p className="font-bold text-gray-400">Treasury</p>
-              <p className="text-2xl">$63,448.78</p>
+              <p className="text-2xl text-sky-400">$63,448.78</p>
             </div>
             <button
               type="button"
@@ -36,14 +34,6 @@ const Ecommerce = () => {
             >
               <BsCurrencyDollar />
             </button>
-          </div>
-          <div className="mt-6">
-            <Button
-              color="white"
-              bgColor={currentColor}
-              text="Download"
-              borderRadius="10px"
-            />
           </div>
         </div>
         <div className="flex m-3 flex-wrap justify-center gap-1 items-center">
@@ -67,24 +57,27 @@ const Ecommerce = () => {
           ))}
         </div>
       </div>
-      <div>
-        <div>
-          <div className='bg-white'>
-        <iframe
-          src="https://dune.com/embeds/2249486/3686610"
-          title="Proposal Chart"
-          width="100%"
-          height="500px"
-          allowfullscreen
-        />
-        </div>
+      <div className="flex justify-center items-center h-screen">
+        <img src="https://user-images.githubusercontent.com/94379406/226928000-283e379d-263b-4b61-9268-9493ca666220.png" alt="ape" width={"50%"} className="align-center" />
+      </div>
+      <div className='flex flex-row'>
 
-        <div className="bg-black dark:text-gray-200 dark:bg-secondary-dark-bg rounded-2xl md:w-400 p-8 m-3 flex justify-center items-center gap-10">
-            <div className="w-40"e>
-              <Pie id="pie-chart" data={ecomPieChartData} legendVisiblity={false} height="160px" />
-            </div>
+          <div className="bg-white md:w-400 p-8 m-3 rounded-2xl">
+            <iframe
+              src="https://dune.com/embeds/2249486/3686610"
+              title="Proposal Chart"
+              width="80%"
+              height="500px"
+              allowFullScreen
+            />
           </div>
-        </div>
+
+          <div className="bg-white dark:text-gray-200  rounded-2xl md:w-400 p-8 m-3 flex justify-center items-center gap-10">
+              <div className="w-40">
+                <Pie id="pie-chart" data={ecomPieChartData} legendVisiblity={false} height="160px" />
+              </div>
+            </div>
+
       </div>
 
       <div className="flex gap-20 m-4 flex-wrap justify-center">
@@ -161,19 +154,17 @@ const Ecommerce = () => {
           </div>
         </div>
       </div>
-      <div className="bg-white">
-      <iframe
-        src="https://dune.com/embeds/2249460/3686581"
-        title="Proposal Chart"
-        width="100%"
-        height="500px"
-        frameBorder="0"
-        allowfullscreen
-        currentColor={currentColor}
-      />  
+      <div className="bg-white w-3/4 mx-6">
+        <iframe
+          src="https://dune.com/embeds/2249460/3686581"
+          title="Proposal Chart"
+          width="90%"
+          height="500px"
+          allowfullScreen
+          currentColor={currentColor}
+        />  
       </div>
     </div>
-     
   );
 };
 
