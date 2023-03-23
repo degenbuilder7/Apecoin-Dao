@@ -29,11 +29,47 @@
         "description": "desc",
         "price": 25 
     },
-    {"image": "https://i.etsystatic.com/22431282/r/il/b2388d/3823566671/il_794xN.3823566671_o1os.jpg",
+    {"image": "https://i.etsystatic.com/41636902/r/il/99f736/4757180739/il_794xN.4757180739_8wc5.jpg",
+        "title": "MoabitArt",
+        "subheader": "APE, Apecoin Men's NUBLEND® Hoodie",
+        "description": "desx",
+        "price": 15  
+    },
+    {"image": "https://i.etsystatic.com/28982921/r/il/3574b2/4238873538/il_794xN.4238873538_nhmu.jpg",
+        "title": "MoabitArt",
+        "subheader": "Bored Ape Yacht Club Print, Monkey Wall Art Decor, Monkey Exhibition Poster, Trendy Wall Art, Digital Print, Bored Ape Yacht Club #7698",
+        "description": "desx",
+        "price": 95  
+    },
+    {"image": "https://i.etsystatic.com/34797600/r/il/b81396/3812985545/il_794xN.3812985545_9ixz.jpg",
+        "title": "MoabitArt",
+        "subheader": "Bored Ape Yacht Club Beanie BAYC Hat Cap ApeCoin Crypto",
+        "description": "desx",
+        "price": 45  
+    },
+    {"image": "https://i.etsystatic.com/25920861/r/il/10805e/3903213921/il_794xN.3903213921_mfxi.jpg",
         "title": "MoabitArt",
         "subheader": "Bored Ape Yacht Club X Moabit // NFT Include",
         "description": "desx",
-        "price": 15  
+        "price": 5  
+    },
+    {"image": "https://i.etsystatic.com/29072056/r/il/1f7ceb/4103839229/il_794xN.4103839229_kje2.jpg",
+        "title": "MoabitArt",
+        "subheader": "Bored Ape Yacht Club (BAYC) Headphone Stand | NFT Art, Headphone Holder, Gaming, Room Decor, Office, Desktop",
+        "description": "desx",
+        "price": 85  
+    },
+    {"image": "https://i.etsystatic.com/17890644/r/il/647d7a/3887244809/il_794xN.3887244809_1bkk.jpg",
+        "title": "MoabitArt",
+        "subheader": "BAYC Bored Ape Yacht Club NFT Sticker sheet. Apecoin | Mutant Ape Yacht Club Gift | Cryptocurrency present | HODL Daytrader decor",
+        "description": "desx",
+        "price": 90  
+    },
+    {"image": "https://i.etsystatic.com/18780231/r/il/004ab7/3441481998/il_794xN.3441481998_7bqh.jpg",
+        "title": "MoabitArt",
+        "subheader": "Acrylic Crypto Display Stand by Cryptochips | Premium Grade-A Acrylic Display | Showcase Your Bitcoin, Ethereum, Doge, or Other Crypto Merch",
+        "description": "desx",
+        "price": 75  
     }
     
 ]
