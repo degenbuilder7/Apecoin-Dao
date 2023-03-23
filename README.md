@@ -29,12 +29,17 @@ Push notifications are utilized in our Apecoin DAO app in various ways to improv
 
 4. DAO events: If the Apecoin DAO hosts events, push notifications could be sent to users to inform them of the event details and remind them to attend.
 
-5. Propol status updates: As proposals progress through the voting process, push notifications could be sent to keep users updated on the status of each proposal.
+5. Proposal status updates: As proposals progress through the voting process, push notifications could be sent to keep users updated on the status of each proposal.
 
 Step 1 -> Get the invite to join the group Chat with exclusive access to APECOIN Members.
 ![image](https://user-images.githubusercontent.com/94379406/227103162-8e7e48e3-52fe-4599-9101-5b408d88e5ec.png)
 
+Step 2->
 ![image](https://user-images.githubusercontent.com/94379406/226927777-1039b524-be2a-4527-8613-7e0fef590a18.png)
 ![image](https://user-images.githubusercontent.com/94379406/226927900-19d125ef-3245-4ecf-9341-df47e2466127.png)
+
+Opt in for Channel 
+![image](https://user-images.githubusercontent.com/94379406/227335229-679de95e-0114-4cc5-a543-40b360942fd4.png)
+
 
 
