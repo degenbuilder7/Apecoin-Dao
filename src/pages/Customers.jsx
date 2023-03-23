@@ -1,7 +1,6 @@
 /* eslint-disable */
 import React from 'react';
 
-
 const Customers = () => {
   return (
     <iframe
