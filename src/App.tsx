@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
-import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
+import { Navbar, Footer, Sidebar, ThemeSettings, Notification } from './components';
 import { Ecommerce, Merch, Calendar, ApeHolder, Kanban, Line, Area, Bar, Pie, Financial, ColorMapping } from './pages';
 import './App.css';
 import { useStateContext } from './contexts/ContextProvider';
@@ -12,7 +12,9 @@ import TrustedUsers from './pages/trustedusers';
 import ChatTest from './components/Chat/ChatTest';
 import GetChatsTest from './components/Chat/GetChats';
 import PushChat from './pages/PushChat';
+import SendMessage from './components/Chat/SendMessage';
 // import LatestProposals from './pages/LatestProposals';
+import Notifications from './pages/Notifications';
 
 const App = () => {
   const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
@@ -94,6 +96,9 @@ const App = () => {
                 <Route path="/chat" element={<ChatTest />} />
                 <Route path="/chats" element={<GetChatsTest />} />
                 <Route path="/pushchat" element={<PushChat />} />
+                <Route path="/send" element={<SendMessage /> } />
+                <Route path="/notifications" element={<Notifications />} />
+
               </Routes>
             </div>
             <Footer />
