@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 
 const Customers = () => {
@@ -7,8 +8,7 @@ const Customers = () => {
     title="Proposal Chart"
     width="100%"
     height="500px"
-    frameBorder="0"
-    allowfullscreen
+    allowFullscreen
   />
   );
 };
