@@ -19,8 +19,9 @@ const ChatTest = () => {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    align-self: flex-start;
     justify-content: center;
-
+    flex-direction: column;
     @media only screen and (max-width: 900px) {
       flex-direction: column;
     }
@@ -75,6 +76,7 @@ const ChatTest = () => {
     touch-action: manipulation;
     white-space: nowrap;
     cursor: pointer;
+
   }
 
   .nav-button:hover {
