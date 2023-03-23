@@ -11,7 +11,7 @@ const Bar = () => {
         title="Voting on Proposal Chart"
         width="100%"
         height="500px"
-        allowfullscreen
+        allowFullScreen
       />
     </div>
   );
