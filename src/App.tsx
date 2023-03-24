@@ -23,6 +23,7 @@ import SendMessage from './components/Chat/SendMessage';
 import Notifications from './pages/Notifications';
 import GetUser from './components/Chat/GetUser';
 import CreateUser from './components/Chat/CreateUser';
+import History from './components/Chat/History';
 
 const App = () => {
   const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
@@ -145,6 +146,7 @@ const App = () => {
                       <Route path="/notifications" element={<Notifications />} />
                       <Route path="/get" element={<GetUser />} />
                       <Route path="/create" element={<CreateUser />} />
+                      <Route path="/history" element={<History />} />
                     </Routes>
                   </div>
                   <Footer />
