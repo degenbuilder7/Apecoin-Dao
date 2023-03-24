@@ -71,7 +71,7 @@ const App = () => {
 
   return (
     <div className={currentMode === 'Dark' ? 'dark' : ''}>
-      <ConnectButton />
+      <ConnectButton navBar={false} />
       
       <EnvContext.Provider value={{ env, isCAIP }}>
         {checkForWeb3Data(web3Data) ? (

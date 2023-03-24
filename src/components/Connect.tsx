@@ -61,9 +61,10 @@ const Disconnect = styled(StyledButton)`
   background: rgb(226, 8, 128);
 `
 
-const ConnectButton = () => {
+const ConnectButton = ({ navBar }: { navBar?: boolean }) => {
   const { active, account, activate, deactivate, chainId } = useWeb3React()
 
+  console.log(navBar);
 
   async function connect() {
     try {
@@ -100,16 +101,25 @@ const ConnectButton = () => {
   return (
     <ConnectWrapper>
       {active ? (
-          <>
-            <p className="text-sky-400 my-2">Connected with <span className="account">{`${account.slice(0, 4)}...${account.slice(-4)}`}</span></p>
-            {/* {chainId ? <p className="network">{NETWORK_MAPPING[chainId]}</p> : null} */}
-            <Disconnect onClick={disconnect}>Disconnect Metamask</Disconnect>
-          </>
+        <>
+          {navBar && (
+            <>
+              <p className="text-sky-400 my-2">
+                Connected with{" "}
+                <span className="account">{`${account.slice(0, 4)}...${account.slice(-4)}`}</span>
+              </p>
+              <Disconnect onClick={disconnect}>Disconnect Metamask</Disconnect>
+            </>
+          )}
+          {/* {chainId ? <p className="network">{NETWORK_MAPPING[chainId]}</p> : null} */}
+        </>
       ) : (
         <Connect onClick={connect}>Connect to MetaMask</Connect>
       )}
     </ConnectWrapper>
-  )
+);
+
 };
+
 
 export default ConnectButton;
