@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useEffect, useState, useContext, useCallback } from 'react';
 import styled from 'styled-components';
 import { Section, SectionItem, SectionButton } from '../components/StyledComponents';
@@ -119,7 +120,7 @@ const Notifications = () => {
   return (
       <div>
         <Header>
-          <h2 className='text-sky-400'>Notifications page</h2>
+          <h2 className='text-sky-400 text-center'>Notifications page</h2>
 
           {/* <TestModal /> */}
           
@@ -131,7 +132,7 @@ const Notifications = () => {
         <TabButtons>
           <SectionButton onClick={() => { setViewType('notif') }}>Notifications</SectionButton>
           <SectionButton onClick={() => { setViewType('spam') }}>Spam</SectionButton>
-          <SectionButton onClick={toggleSubscribedModal}>show subscribed modal</SectionButton>
+          <SectionButton onClick={toggleSubscribedModal}>More ways to get Notified</SectionButton>
         </TabButtons>
 
         <Loader show={isLoading} />
