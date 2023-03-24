@@ -98,10 +98,10 @@ const ChatTest = () => {
       <Section>
         <NavMenu>
           <Link to="/get" className="nav-button">
-            USER.GET
+            Get the user
           </Link>
           <Link to="/create" className="nav-button">
-            USER.CREATE
+            CREATE the user
           </Link>
           <Link to="/send" className="nav-button">
             CHAT.SEND
@@ -112,14 +112,8 @@ const ChatTest = () => {
           <Link to="/chats" className="nav-button">
             CHAT.CHATS
           </Link>
-          <Link to="/requests" className="nav-button">
-            CHAT.REQUESTS
-          </Link>
-          <Link to="/hash" className="nav-button">
-            CHAT.CONVERSATIONHASH
-          </Link>
           <Link to="/history" className="nav-button">
-            CHAT.HISTORY
+            Get all the group Messages
           </Link>
         </NavMenu>
       </Section>
