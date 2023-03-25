@@ -19,7 +19,7 @@ const History = () => {
   const { account } = useContext<any>(Web3Context);
   const [isLoading, setLoading] = useState(false);
   const [response, setResponse] = useState<any>({});
-  const [threadhash, setThreadhash] = useState<string>('bafyreihzbtwys4z6ayebh34eu4qvkz5rhhnry4rwoito623bkur6lsmxvy');
+  const [threadhash, setThreadhash] = useState<string>('bafyreice2omf4xfv5yiwmxhpag3fxot7x5l25svpntqqq4w3jn66ayvtte');
   const [limit, setLimit] = useState<number>(10);
   const [selectedMessage, setSelectedMessage] = useState(null);
 
