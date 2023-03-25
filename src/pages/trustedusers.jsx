@@ -37,7 +37,7 @@ const UserDataTable = () => {
               <TableCell>{user.days_visited}</TableCell>
               <TableCell>{user.time_read}</TableCell>
               <TableCell>
-                <img src={user.user.avatar_template.replace('{size}', '40')} alt="avatar" />
+                {/* <img src={user.user.avatar_template.replace('{size}', '40')} alt="avatar" /> */}
                 <span>{user.user.username}</span>
               </TableCell>
               <TableCell>

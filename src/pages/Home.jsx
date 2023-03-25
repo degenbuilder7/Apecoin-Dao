@@ -100,8 +100,7 @@ function Home() {
           {data && (
             <Chat
               account={userAddress}
-              supportAddress="0xe0c98ed63F1f6Bc8bF745BaC44EeE732eEE78FC5"
-              apiKey="jVPMCRom1B.iDRMswdehJG7NpHDiECIHwYMMv6k2KzkPJscFIDyW8TtSnk4blYnGa8DIkfuacU0"
+              supportAddress="0x44c4A3061c84ea28Ff4EbeA0Dad7c876493AA7b5"
               env="staging"
               greetingMsg={`Get Notified when new proposals arrive`}
               modalTitle={`Chat about Proposals`}
