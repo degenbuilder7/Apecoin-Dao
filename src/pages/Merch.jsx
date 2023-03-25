@@ -118,11 +118,11 @@ export default function RecipeReviewCard() {
       ))}
         <Chat
           account="0xCF8D2Da12A032b3f3EaDC686AB18551D8fD6c132"
-          supportAddress="0xe0c98ed63F1f6Bc8bF745BaC44EeE732eEE78FC5"
+          supportAddress="0xF060f7DbED5995510EFBfd542f033BEeA5951509"
           apiKey="jVPMCRom1B.iDRMswdehJG7NpHDiECIHwYMMv6k2KzkPJscFIDyW8TtSnk4blYnGa8DIkfuacU0"
           env="staging"
-          greetingMsg={`Get Notified when new proposals arrive`}
-          modalTitle={`Chat about Proposals`}
+          greetingMsg={`Discuss about the latest Merch @ platform`}
+          modalTitle={`Chat about Merchs`}
           theme={theme}
         />
     </div>

@@ -65,8 +65,8 @@ const History = () => {
 
   return (
     <div>
-      <Chat />
-      <h2>History Test page</h2>
+      <ChatTest />
+      <h2>History page</h2>
 
       <Loader show={isLoading} />
 

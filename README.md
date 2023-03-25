@@ -7,6 +7,12 @@ Proposals, Governance , Votes , Messaging
 1> Improved Governance
 Stats related to the governance of the dao shown in the form of charts. 
 
+2> Token Gated
+Platform is token Gated via this token https://mumbai.polygonscan.com/token/0x54b18c232b6bFb2BC2148c1F7D78ad3D7c5ca50C
+![image](https://user-images.githubusercontent.com/94379406/227695691-c875d0ad-08c2-4730-a95b-87af4a20a361.png)
+
+which will be moved to APE Coin in the Future.
+
 2> Merchandise marketplace: 
 We are providing a marketplace for ApeCoin-branded merchandise, allowing users to purchase unique swag and support the ApeCoin community.
 

@@ -5,6 +5,8 @@ import data from "./trust.json";
 
 const UserDataTable = () => {
   return (
+    <>
+    <h1>Trusted Users</h1>
     <TableContainer component={Paper}>
       <Table>
         <TableHead>
@@ -46,6 +48,7 @@ const UserDataTable = () => {
         </TableBody>
       </Table>
     </TableContainer>
+    </>
   );
 };
 
