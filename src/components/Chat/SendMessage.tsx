@@ -19,7 +19,7 @@ const SendMessage = () => {
   const { env, isCAIP } = useContext<any>(EnvContext);
   const [isLoading, setLoading] = useState(false);
   const [messageContent, setMessageContent] = useState<string>('');
-  const [receiverAddress, setReceiverAddress] = useState<string>('');
+  const [receiverAddress, setReceiverAddress] = useState<string>('f1a971448b94f664db31bb94e0ac0df97e56a803c88d08b7a1ecb84f6e491237');
   const [apiKey, setApiKey] = useState<string>('');
 
   const [sendResponse, setSendResponse] = useState<any>('');
