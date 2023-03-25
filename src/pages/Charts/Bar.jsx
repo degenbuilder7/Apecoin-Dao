@@ -4,7 +4,7 @@ import { ChartsHeader } from '../../components';
 
 const Bar = () => {
   return (
-    <div className="m-4 md:m-10 mt-24 p-10 bg-white dark:bg-secondary-dark-bg rounded-3xl">
+    <div className="m-4 md:m-10 mt-24 p-10  dark:bg-white rounded-3xl">
       <ChartsHeader category="Bar" title="Voting on Proposal" />
       <iframe
         src="https://dune.com/embeds/2210809/3626347"

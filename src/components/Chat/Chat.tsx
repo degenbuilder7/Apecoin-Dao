@@ -91,7 +91,7 @@ const Chat = () => {
 
   return (
     <StyledApp>
-      <h2 className='text-lime-400 text-center'>Chat page</h2>
+      <h2 className='text-lime-400 text-center text-2xl'>Chat page</h2>
 
       <Loader show={isLoading} />
 

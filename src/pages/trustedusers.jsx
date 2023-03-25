@@ -5,6 +5,8 @@ import data from "./trust.json";
 
 const UserDataTable = () => {
   return (
+    <>
+    <h1>Trusted Users</h1>
     <TableContainer component={Paper}>
       <Table>
         <TableHead>
@@ -35,7 +37,7 @@ const UserDataTable = () => {
               <TableCell>{user.days_visited}</TableCell>
               <TableCell>{user.time_read}</TableCell>
               <TableCell>
-                {/* <img src={user.user.avatar_template.replace('{size}', '40')} alt="avatar" /> */}
+                <img src={user.user.avatar_template.replace('{size}', '40')} alt="avatar" />
                 <span>{user.user.username}</span>
               </TableCell>
               <TableCell>
@@ -46,6 +48,7 @@ const UserDataTable = () => {
         </TableBody>
       </Table>
     </TableContainer>
+    </>
   );
 };
 
