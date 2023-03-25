@@ -12,7 +12,7 @@ import Web3Context from '../../contexts/web3context';
 import EnvContext from '../../contexts/envContext';
 import * as PushAPI from '@pushprotocol/restapi';
 import { walletToPCAIP10 } from '../../helpers';
-import ChatTest from './ChatTest';
+import Chat from './Chat';
 
 const GetChatsTest = () => {
   const { account } = useContext<any>(Web3Context);
@@ -48,7 +48,7 @@ const GetChatsTest = () => {
 
   return (
     <div>
-      <ChatTest />
+      <Chat />
       <h2>Get Chats Test page</h2>
 
       <Loader show={isLoading} />

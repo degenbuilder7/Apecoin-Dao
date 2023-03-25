@@ -11,7 +11,7 @@ import EnvContext from '../../contexts/envContext';
 import * as PushAPI from '@pushprotocol/restapi';
 import { IUser } from '@pushprotocol/restapi';
 import { walletToPCAIP10 } from '../../helpers';
-import ChatTest from './ChatTest';
+import Chat from './Chat';
 import React from 'react';
 
 const GetUser = () => {
@@ -61,7 +61,7 @@ const GetUser = () => {
 
   return (
     <div>
-      <ChatTest />
+      <Chat />
       <h2>Get User Test page</h2>
 
       <Loader show={isLoading} />

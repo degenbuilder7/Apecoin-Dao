@@ -5,12 +5,12 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import {
   Section,
-} from '../../components/StyledComponents';
-import Loader from '../../components/Loader';
+} from '../StyledComponents';
+import Loader from '../Loader';
 import Web3Context from '../../contexts/web3context';
 import EnvContext from '../../contexts/envContext';
 
-const ChatTest = () => {
+const Chat = () => {
   const { library, account, chainId } = useContext<any>(Web3Context);
   const { env, isCAIP } = useContext<any>(EnvContext);
   const [isLoading, setLoading] = useState(false);
@@ -121,4 +121,4 @@ const ChatTest = () => {
   );
 };
 
-export default ChatTest;
+export default Chat;

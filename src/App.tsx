@@ -11,7 +11,7 @@ import { useStateContext } from './contexts/ContextProvider';
 import Home from './pages/Home';
 import TrustedUsers from './pages/trustedusers';
 // import LatestProposals from './pages/LatestProposals';
-import ChatTest from './components/Chat/ChatTest';
+import Chat from './components/Chat/Chat';
 import GetChatsTest from './components/Chat/GetChats';
 import PushChat from './pages/PushChat';
 import { useWeb3React } from '@web3-react/core';
@@ -139,7 +139,7 @@ const App = () => {
                       <Route path="/color-mapping" element={<ColorMapping />} />
                       <Route path="/apeholders" element={<ApeHolder />} />
                       <Route path="/trustlevel" element={<TrustedUsers />} />
-                      <Route path="/chat" element={<ChatTest />} />
+                      <Route path="/chat" element={<Chat />} />
                       <Route path="/chats" element={<GetChatsTest />} />
                       <Route path="/pushchat" element={<PushChat />} />
                       <Route path="/send" element={<SendMessage /> } />
