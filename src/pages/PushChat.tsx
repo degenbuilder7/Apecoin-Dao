@@ -9,15 +9,11 @@ import Dropdown from '../components/Dropdown';
 import Web3Context from "../contexts/web3context";
 import EnvContext from '../contexts/envContext'; 
 // import { ReactComponent as PushLogo } from '../data/pushLogo.svg';
-import ChatTest from '../components/Chat/ChatTest';
 import CreateUserTest from '../components/Chat/CreateUser';
 import SendMessageTest from '../components/Chat/SendMessage';
 import ApproveRequestTest from '../components/Chat/ApproveRequest';
 import GetChats from "../components/Chat/GetChats";
 import GetUser from '../components/Chat/GetUser';
-// import ConversationHashTest from './ChatTest/ConversationHash';
-// import HistoryTest from './ChatTest/History';
-// import GetRequestsTest from './ChatTest/GetRequests';
 
 interface Web3ReactState {
   chainId?: number;
