@@ -1,8 +1,10 @@
 # Ape Sync
 
+A Project build to Improve the Governance at Apecoin Dao and manage day-2-day tasks easily and never missing on Important Notifications related to Dao.
+
 Dashboard for Governance of Apecoin DAO
 
-Proposals, Governance , Votes , Messaging 
+Proposals, Governance , Votes , Group Messaging , Merchandise.
 
 # Features
 
