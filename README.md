@@ -1,4 +1,6 @@
-# Dashboard for Governance of Apecoin DAO
+# Ape Sync
+
+Dashboard for Governance of Apecoin DAO
 
 Proposals, Governance , Votes , Messaging 
 
