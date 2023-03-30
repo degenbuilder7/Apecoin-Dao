@@ -30,7 +30,7 @@ const ExpandMore = styled((props) => {
 export default function RecipeReviewCard() {
   const [expanded, setExpanded] = React.useState([]);
   const [myContract, setMyContract] = useState(null);
-  const [balance, setBalance] = useState(false);
+  const [balance, setBalance] = useState(true);
   const { account} = useWeb3React();
 
   useEffect(() => {
@@ -47,20 +47,20 @@ export default function RecipeReviewCard() {
     getContract();
   }, []);
 
-  useEffect(() => {
-    async function getBalance() {
-      if (myContract) {
-        const balance = await myContract.balanceOf(account);
-        if (balance._hex !== '0x00') {
-          setBalance(true);
-        } else {
-          setBalance(false);
-        }
-      }
-    }
+  // useEffect(() => {
+  //   async function getBalance() {
+  //     if (myContract) {
+  //       const balance = await myContract.balanceOf(account);
+  //       if (balance._hex !== '0x00') {
+  //         setBalance(true);
+  //       } else {
+  //         setBalance(false);
+  //       }
+  //     }
+  //   }
 
-    getBalance();
-  }, [myContract, account]);
+  //   getBalance();
+  // }, [myContract, account]);
 
   const handleExpandClick = (index) => {
     setExpanded((prevExpanded) => {
